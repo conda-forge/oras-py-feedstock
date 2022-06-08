@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - oras-py=oras.cli:run
@@ -25,7 +25,6 @@ requirements:
     - python >=3.7
     - jsonschema
     - requests
-    - docker-py ==5.0.1
 
 test:
   requires:
