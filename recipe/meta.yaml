@@ -1,5 +1,5 @@
 {% set name = "oras-py" %}
-{% set version = "0.0.18" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,12 @@ package:
 
 source:
   url: https://github.com/oras-project/oras-py/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 5b40810b0959f259e657e994e150a6f08c48c61de98b77204808db97b57374f9
+  sha256: 2697a5cc866ab8c8172ad9592c2f7be11ea449a0f64023db399bd412796ab3c7
 
 build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  entry_points:
-    - oras-py=oras.cli:run
 
 requirements:
   host:
@@ -33,7 +31,6 @@ test:
     - oras
   commands:
     - pip check
-    - oras-py --help
 
 about:
   home: https://github.com/oras-project/oras-py
