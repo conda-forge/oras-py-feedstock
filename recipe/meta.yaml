@@ -31,7 +31,6 @@ test:
     - oras
   commands:
     - pip check
-    - oras-py --help
 
 about:
   home: https://github.com/oras-project/oras-py
