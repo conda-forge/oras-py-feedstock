@@ -1,11 +1,11 @@
-About oras-py
-=============
+About oras-py-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oras-py-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/oras-project/oras-py
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oras-py-feedstock/blob/main/LICENSE.txt)
 
 Summary: OCI Registry as Storage Python client
 
